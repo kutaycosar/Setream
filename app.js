@@ -16,7 +16,7 @@ let connectionString = 'mongodb://todoAppUser:0024882aaa@cluster0-shard-00-00.m1
 
 mongodb.connect(connectionString, {useNewUrlParser: true}, function(err, client){
     db = client.db()
-    app.listen(port) // db olusturuldugunda portu dinlemeye baslar
+    app.listen(3000) // db olusturuldugunda portu dinlemeye baslar
 })
 
 app.use(express.json())
@@ -54,7 +54,7 @@ app.post('/create-item',function(req,res){
         text: req.body.text,
         yorum: req.body.text2,
         date: date.toLocaleString(),
-        no: x.toString()
+        no: x
     }
     x = x+1
     db.collection('items').insertOne(data, function(err, info){
