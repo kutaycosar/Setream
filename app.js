@@ -9,7 +9,7 @@ let data
 // if (port == null || port == "") {
 //     port = 3000
 // }
-
+//hehehe
 app.use(express.static('public')) //public folderini kullanicaz
 
 let connectionString = 'mongodb://todoAppUser:0024882aaa@cluster0-shard-00-00.m1hmo.mongodb.net:27017,cluster0-shard-00-01.m1hmo.mongodb.net:27017,cluster0-shard-00-02.m1hmo.mongodb.net:27017/Setream?ssl=true&replicaSet=atlas-tj1li7-shard-0&authSource=admin&retryWrites=true&w=majority'
