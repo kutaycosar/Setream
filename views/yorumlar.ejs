@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="10" />
+    <title>Document</title>
+    <script src="/filesaver.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+<body>
+    <ul id="item-list" class="list-group pb-5">
+        <% data.forEach(item => { %>
+                <li class="list-group-item list-group-item-action d-flex align-items-left justify-content-between">
+                <label for="item-isim">İsim</label>    
+                <textarea readonly class="item-isim" rows="3"><%= item.text %></textarea>
+                <label for="item-yorum">Yorum</label>
+                <textarea readonly class="item-yorum" rows="3" cols="90"><%= item.yorum %></textarea>
+                <button data-id="<%= item._id %>" class="delete-me btn btn-danger btn-lg">Yorumu Sil</button>
+              </li>
+        <% }) %> 
+    </ul>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> 
+    <script src="/browser.js"></script> 
+</body>
+</html>
