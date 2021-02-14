@@ -7,7 +7,7 @@ function alertTimeout(mymsg,mymsecs)
 {
   var myelement = document.createElement("div");
   myelement.className = "animate__animated animate__bounceOut"
-  myelement.setAttribute("style","animation-duration: 1s; background: rgba(30, 139, 195, 0.8); color:white; width: 450px;height: 200px;position: absolute;top:0;bottom:0;left:0;right:0;margin:auto;border: 4px solid lightblue; border-radius: 50px; font-family:arial;font-size:25px;font-weight:bold;display: flex; align-items: center; justify-content: center; text-align: center;");
+  myelement.setAttribute("style","animation-duration: 1.4s; background: rgba(30, 139, 195, 0.8); color:white; width: 200px;height: 100px;position: absolute;top:0;bottom:0;left:0;right:0;margin:auto;border: 4px solid lightblue; border-radius: 30px; font-family:arial;font-size:15px;font-weight:bold;display: flex; align-items: center; justify-content: center; text-align: center;");
   myelement.innerHTML = mymsg;
   setTimeout(function(){
   myelement.parentNode.removeChild(myelement);
