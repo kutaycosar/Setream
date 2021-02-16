@@ -33,7 +33,7 @@ function ChangeSource(Button){
         document.getElementById("lang-button2").className = "btn btn-secondary";
     } else 
     if(Button==2){
-        FrameId.src='https://player.vimeo.com/video/512731427?title=0&byline=0&portrait=0',
+        FrameId.src='https://player.vimeo.com/video/512731427?autoplay=1&title=0&byline=0&portrait=0',
         document.getElementById("lang-button2").className = "btn btn-primary";
         document.getElementById("lang-button1").className = "btn btn-secondary";
     } 
