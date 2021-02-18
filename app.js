@@ -52,14 +52,12 @@ app.get('/yorumlar',passwordProtected, function(req,res){
 
 app.post('/create-item',function(req,res){
     date = new Date()
-    var x = 1
     data = {
         text: req.body.text,
         yorum: req.body.text2,
-        date: date.toLocaleString(),
-        no: x
+        date: date.toLocaleString()
     }
-    x = x+1
+
     db.collection('items').insertOne(data, function(err, info){
         res.json(info.ops[0])
     })
