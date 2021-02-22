@@ -5,7 +5,7 @@ let createField2 = document.getElementById("create-field2")
 let errors = []
 
 let validation = function(){
-  if (createField.value.length < 3) {errors.push("İsminiz 50 karakterden kısa ve iki karakterden uzun olmalıdır.")}
+  if (createField.value.length < 3) {errors.push("İsminiz iki karakterden uzun olmalıdır.")}
   if (createField2.value.length < 10) {errors.push("Yorumunuz 10 karakterden uzun olmalıdır.")}
 }
 
