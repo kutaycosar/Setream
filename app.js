@@ -16,7 +16,7 @@ let connectionString = 'mongodb://todoAppUser:0024882aaa@cluster0-shard-00-00.m1
 
 mongodb.connect(connectionString, {useNewUrlParser: true}, function(err, client){
     db = client.db()
-    app.listen(port) // db olusturuldugunda portu dinlemeye baslar
+    app.listen(8000) // db olusturuldugunda portu dinlemeye baslar
 })
 
 app.use(express.json())
